@@ -4,7 +4,7 @@
  * @return {number}
  */
 var hammingDistance = function(x, y) {
-    var length;
+    let length;
     if(x > y) {
         length = x.toString(2).split("").length;
     }
@@ -15,7 +15,7 @@ var hammingDistance = function(x, y) {
     x = x.toString(2).split("");
     y = y.toString(2).split("");
 
-    var counter = 0;
+    let counter = 0;
     for(let i = 0; i < length; i++) {
         let poppedX = x.pop();
         let poppedY = y.pop();
